@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1481533234 source:c:\users\alexa\desktop\oui\projet 2\launcher\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<time.h>
+	<conio.h>
+	"launcher.h"
+
+1481533868 c:\users\alexa\desktop\oui\projet 2\launcher\launcher.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<time.h>
+	<conio.h>
+
