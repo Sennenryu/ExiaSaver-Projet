@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     int z = 3;
     int caractereLu, ligne = 1, caractereoui;
 
-    printf("==============STATISTIQUES==============\n\n");
+    printf("==============STATISTIQUES==============\n\n");		///Affichage du menu de l'historique
     printf(" Nous vous proposons 3 modes          \n");
     printf(" d'affichages :                       \n\n");
     printf("    1. Date/ScreenSaver/Parametre     \n");
