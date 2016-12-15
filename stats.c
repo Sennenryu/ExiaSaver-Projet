@@ -27,24 +27,24 @@ int main(int argc, char *argv[])
         {
             fichier = fopen("stats.txt", "r");		///On ouvre le fichier stat et on le lit
 
-            caractereoui=fgetc(fichier);
+            caractereoui=fgetc(fichier);			
             printf("%c", caractereoui);
     		fclose(fichier);
-    		fichier = fopen("stats.txt", "r");
-      		while (caractereLu!=EOF)				///
+    		fichier = fopen("stats.txt", "r");	
+      		while (caractereLu!=EOF)			///boucle pour lire tout le fichier		
       		{
-			    caractereLu=fgetc(fichier);
+			    caractereLu=fgetc(fichier);		///On lit le caractère
 			    if (caractereLu=='\n')
    			    {
    			    	ligne++;
 
    				}
 
-				if(ligne == x)
+				if(ligne == x)			//Quel ligne lire
    				{
-   					fgets(chaine,TAILLE_MAX,fichier);
+   					fgets(chaine,TAILLE_MAX,fichier);	///afficher la ligne
 				    printf("%s", chaine);
-				    x = x+4;
+				    x = x+4;			
 
 				}
 
@@ -58,18 +58,18 @@ int main(int argc, char *argv[])
         {
 
     		fichier = fopen("stats.txt", "r");
-      		while (caractereLu!=EOF)
+      		while (caractereLu!=EOF)		///boucle pour lire tout le fichier
       		{
-			    caractereLu=fgetc(fichier);
+			    caractereLu=fgetc(fichier);		///On lit le caractère
 			    if (caractereLu=='\n')
    			    {
    			    	ligne++;
 
    				}
 
-				if(ligne == y)
+				if(ligne == y)			///Quel ligne lire
    				{
-   					fgets(chaine,TAILLE_MAX,fichier);
+   					fgets(chaine,TAILLE_MAX,fichier);		///afficher la ligne
 				    printf("%s", chaine);
 				    y = y+4;
 
@@ -86,18 +86,18 @@ int main(int argc, char *argv[])
         {
 
     		fichier = fopen("stats.txt", "r");
-      		while (caractereLu!=EOF)
+      		while (caractereLu!=EOF)		///boucle pour lire tout le fichier
       		{
-			    caractereLu=fgetc(fichier);
+			    caractereLu=fgetc(fichier);		///On lit lecaractère
 			    if (caractereLu=='\n')
    			    {
    			    	ligne++;
 
    				}
 
-				if(ligne == z)
+				if(ligne == z)			///Quel ligne lire
    				{
-   					fgets(chaine,TAILLE_MAX,fichier);
+   					fgets(chaine,TAILLE_MAX,fichier);	///afficher la ligne
 				    printf("%s", chaine);
 				    fgets(chaine,TAILLE_MAX,fichier);
 					printf("%s", chaine);
