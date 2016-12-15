@@ -5,7 +5,7 @@
 #define TAILLE_MAX 1000
 int nbr1 =0;
 
-void choix ()
+void choix ()       //fonction pour choisir le mode d'√©cran
 {
     int nbr;
     srand (time (NULL));
@@ -13,9 +13,9 @@ void choix ()
     int _iMax = 7;
     DIR *dir= NULL;
 
-    dir = opendir("EXIASAVER1_PBM/");
+    dir = opendir("EXIASAVER1_PBM/");           ///on ouvre le r√©pertoire PBM
 
-    nbr = (_iMin + (rand () % (_iMax-_iMin+1)));
+    nbr = (_iMin + (rand () % (_iMax-_iMin+1)));    ///on trouve un nombre random
 
     if (nbr1==1)
     {
@@ -30,7 +30,7 @@ void choix ()
     	execl("dynamique2","dynamique2", 0, 0);
     }
 }
-void randomm ()
+void randomm ()     //fonction random pour choisir quel programme va pouvoir se lancer
 {
     int iRandom = 0;
     int _iMin = 1;
@@ -49,13 +49,13 @@ void stati()
     char chaine[TAILLE_MAX] = "";
     int a = 0;
     char format[128];
-    time_t temps;        //DÈclaration des variables / format correspond ‡ la longeur du rÈsultat ‡ afficher.
+    time_t temps;        //D√©claration des variables / format correspond √† la longeur du r√©sultat √† afficher.
     struct tm date;
-                         // On rÈcupËre la date et l'heure actuelles.
+                         // On r√©cup√®re la date et l'heure actuelles.
     fichier = fopen("stats.txt", "a");
     time(&temps);
     date=*localtime(&temps);
-                         // On remplit la chaÓne avec le format, puis on l'affiche.
+                         // On remplit la cha√Æne avec le format, puis on l'affiche.
 
     if (nbr1==1)
     {
