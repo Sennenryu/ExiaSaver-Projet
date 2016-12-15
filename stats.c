@@ -21,17 +21,17 @@ int main(int argc, char *argv[])
     printf("    3.          Date\n       ScreenSaver/Parametre\n\n\n");
     while ((a!=1)||(a!=2)||(a!=3))
     {
-        printf("Quel affichage voules-vous ?\n");
+        printf("Quel affichage voules-vous ?\n");     ///Choix de l'affichage
         scanf("%d", &a);
         if (a==1)
         {
-            fichier = fopen("stats.txt", "r");
+            fichier = fopen("stats.txt", "r");		///On ouvre le fichier stat et on le lit
 
             caractereoui=fgetc(fichier);
             printf("%c", caractereoui);
     		fclose(fichier);
     		fichier = fopen("stats.txt", "r");
-      		while (caractereLu!=EOF)
+      		while (caractereLu!=EOF)				///
       		{
 			    caractereLu=fgetc(fichier);
 			    if (caractereLu=='\n')
@@ -114,7 +114,8 @@ int main(int argc, char *argv[])
         }
     }
     printf("\n");
-    char c = getchar();
+	
+    char c = getchar();			/// Permet de quitter le programme 
     system("stty cbreak -echo");
     getchar();
     system("stty cooked echo");
